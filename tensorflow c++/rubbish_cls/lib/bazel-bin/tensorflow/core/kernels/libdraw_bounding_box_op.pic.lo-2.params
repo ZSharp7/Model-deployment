@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdraw_bounding_box_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/draw_bounding_box_op/draw_bounding_box_op.pic.o

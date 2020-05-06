@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libsearchsorted_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/searchsorted_op_gpu/searchsorted_op_gpu.cu.pic.o

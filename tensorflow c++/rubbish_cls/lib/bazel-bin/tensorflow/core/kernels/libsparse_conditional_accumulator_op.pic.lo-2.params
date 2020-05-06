@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libsparse_conditional_accumulator_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/sparse_conditional_accumulator_op/sparse_conditional_accumulator_op.pic.o

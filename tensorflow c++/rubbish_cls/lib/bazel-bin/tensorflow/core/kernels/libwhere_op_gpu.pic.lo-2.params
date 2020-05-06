@@ -1,0 +1,7 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libwhere_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/where_op_gpu/where_op_gpu_impl_1.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/where_op_gpu/where_op_gpu_impl_2.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/where_op_gpu/where_op_gpu_impl_3.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/where_op_gpu/where_op_gpu_impl_4.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/where_op_gpu/where_op_gpu_impl_5.cu.pic.o

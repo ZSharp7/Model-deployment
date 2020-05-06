@@ -1,0 +1,5 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libbatch_space_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/batch_space_ops/batchtospace_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/batch_space_ops/spacetobatch_functor.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/batch_space_ops/spacetobatch_op.pic.o

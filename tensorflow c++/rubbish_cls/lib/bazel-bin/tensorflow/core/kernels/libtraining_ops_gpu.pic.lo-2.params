@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libtraining_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/training_ops_gpu/training_ops_gpu.cu.pic.o

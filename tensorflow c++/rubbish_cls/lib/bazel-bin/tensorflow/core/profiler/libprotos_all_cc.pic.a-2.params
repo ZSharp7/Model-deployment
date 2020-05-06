@@ -1,0 +1,6 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/profiler/libprotos_all_cc.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/profiler/_objs/protos_all_cc/profile.pb.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/profiler/_objs/protos_all_cc/tfprof_log.pb.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/profiler/_objs/protos_all_cc/tfprof_options.pb.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/profiler/_objs/protos_all_cc/tfprof_output.pb.pic.o

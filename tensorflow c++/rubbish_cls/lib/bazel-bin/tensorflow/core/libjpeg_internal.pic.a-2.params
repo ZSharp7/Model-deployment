@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libjpeg_internal.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/_objs/jpeg_internal/jpeg_handle.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/_objs/jpeg_internal/jpeg_mem.pic.o

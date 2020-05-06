@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libexample_parser_configuration.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/example_parser_configuration/example_parser_configuration.pic.o

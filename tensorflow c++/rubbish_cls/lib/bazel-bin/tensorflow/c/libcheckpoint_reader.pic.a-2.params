@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/c/libcheckpoint_reader.pic.a
+bazel-out/k8-opt/bin/tensorflow/c/_objs/checkpoint_reader/checkpoint_reader.pic.o

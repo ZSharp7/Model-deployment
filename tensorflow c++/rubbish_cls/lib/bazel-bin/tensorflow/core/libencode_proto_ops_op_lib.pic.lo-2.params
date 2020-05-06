@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libencode_proto_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/encode_proto_ops_op_lib/encode_proto_ops.pic.o

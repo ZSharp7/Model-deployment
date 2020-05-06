@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libcollective_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/collective_ops/collective_ops.pic.o

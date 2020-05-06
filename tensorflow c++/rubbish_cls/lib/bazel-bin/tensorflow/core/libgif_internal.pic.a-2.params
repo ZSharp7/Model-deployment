@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libgif_internal.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/_objs/gif_internal/gif_io.pic.o

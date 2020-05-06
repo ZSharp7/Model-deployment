@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libself_adjoint_eig_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/self_adjoint_eig_op/self_adjoint_eig_op.pic.o

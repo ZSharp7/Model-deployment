@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/liblatency_all_edges.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/_objs/latency_all_edges/latency_all_edges.pic.o

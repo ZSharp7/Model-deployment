@@ -1,0 +1,10 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libconv_2d_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_double.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_float.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_half.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_int.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_uint16.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_uint32.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_uint64.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_2d_gpu/conv_2d_gpu_uint8.cu.pic.o

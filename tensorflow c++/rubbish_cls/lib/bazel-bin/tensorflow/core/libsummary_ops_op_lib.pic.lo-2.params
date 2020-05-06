@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libsummary_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/summary_ops_op_lib/summary_ops.pic.o

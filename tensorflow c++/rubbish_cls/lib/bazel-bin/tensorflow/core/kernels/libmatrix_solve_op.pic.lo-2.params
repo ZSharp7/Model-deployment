@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmatrix_solve_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/matrix_solve_op/matrix_solve_op.pic.o

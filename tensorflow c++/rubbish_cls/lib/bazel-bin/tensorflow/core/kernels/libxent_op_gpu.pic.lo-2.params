@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libxent_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/xent_op_gpu/xent_op_gpu.cu.pic.o

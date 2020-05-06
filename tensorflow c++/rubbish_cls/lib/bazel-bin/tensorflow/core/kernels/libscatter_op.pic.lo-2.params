@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libscatter_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/scatter_op/scatter_op.pic.o

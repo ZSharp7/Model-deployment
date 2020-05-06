@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/libmulti_device_iterator_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/_objs/multi_device_iterator_ops/multi_device_iterator_ops.pic.o

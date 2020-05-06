@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/libconst_op.pic.a
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/const_op/const_op.pic.o

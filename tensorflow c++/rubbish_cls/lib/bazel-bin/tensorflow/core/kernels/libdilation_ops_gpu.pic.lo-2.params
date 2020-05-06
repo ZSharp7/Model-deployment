@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdilation_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/dilation_ops_gpu/dilation_ops_gpu.cu.pic.o

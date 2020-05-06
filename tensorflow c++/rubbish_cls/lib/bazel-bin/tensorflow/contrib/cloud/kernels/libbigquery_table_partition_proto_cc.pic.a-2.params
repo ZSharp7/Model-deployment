@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/kernels/libbigquery_table_partition_proto_cc.pic.a
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/kernels/_objs/bigquery_table_partition_proto_cc/bigquery_table_partition.pb.pic.o

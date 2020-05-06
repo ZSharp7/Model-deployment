@@ -1,0 +1,10 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libslice_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_1.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_2.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_3.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_4.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_5.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_6.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/slice_op/slice_op_cpu_impl_7.pic.o

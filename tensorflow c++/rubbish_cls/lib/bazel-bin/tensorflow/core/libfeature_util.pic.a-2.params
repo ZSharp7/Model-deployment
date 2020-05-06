@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libfeature_util.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/_objs/feature_util/feature_util.pic.o

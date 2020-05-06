@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdata_format_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/data_format_ops_gpu/data_format_ops_gpu.cu.pic.o

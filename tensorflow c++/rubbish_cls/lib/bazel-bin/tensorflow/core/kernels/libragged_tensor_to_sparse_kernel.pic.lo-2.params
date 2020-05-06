@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libragged_tensor_to_sparse_kernel.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/ragged_tensor_to_sparse_kernel/ragged_tensor_to_sparse_kernel.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libstateless_random_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/stateless_random_ops_op_lib/stateless_random_ops.pic.o

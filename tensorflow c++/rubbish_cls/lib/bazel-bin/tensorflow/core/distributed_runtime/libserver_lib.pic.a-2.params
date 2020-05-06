@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libserver_lib.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/server_lib/server_lib.pic.o

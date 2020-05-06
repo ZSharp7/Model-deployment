@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdepth_space_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/depth_space_ops/depthtospace_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/depth_space_ops/spacetodepth_op.pic.o

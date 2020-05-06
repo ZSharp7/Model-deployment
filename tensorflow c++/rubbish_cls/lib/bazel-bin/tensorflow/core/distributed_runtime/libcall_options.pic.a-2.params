@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libcall_options.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/call_options/call_options.pic.o

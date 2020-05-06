@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libworker_cache_partial.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/worker_cache_partial/worker_cache_partial.pic.o

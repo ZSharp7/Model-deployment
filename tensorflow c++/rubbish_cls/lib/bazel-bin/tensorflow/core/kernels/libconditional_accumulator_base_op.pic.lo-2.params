@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libconditional_accumulator_base_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conditional_accumulator_base_op/conditional_accumulator_base_op.pic.o

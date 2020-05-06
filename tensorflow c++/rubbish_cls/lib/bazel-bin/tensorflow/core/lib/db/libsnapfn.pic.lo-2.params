@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/lib/db/libsnapfn.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/lib/db/_objs/snapfn/snapfn.pic.o

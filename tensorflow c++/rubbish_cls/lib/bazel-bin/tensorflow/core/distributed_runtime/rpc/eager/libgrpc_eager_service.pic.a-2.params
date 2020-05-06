@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/rpc/eager/libgrpc_eager_service.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/rpc/eager/_objs/grpc_eager_service/grpc_eager_service.pic.o

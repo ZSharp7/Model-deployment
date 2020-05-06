@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libone_hot_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/one_hot_op/one_hot_op.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libcheck_numerics_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/check_numerics_op_gpu/check_numerics_op_gpu.cu.pic.o

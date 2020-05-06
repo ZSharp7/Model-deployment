@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libfifo_queue_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/fifo_queue_op/fifo_queue_op.pic.o

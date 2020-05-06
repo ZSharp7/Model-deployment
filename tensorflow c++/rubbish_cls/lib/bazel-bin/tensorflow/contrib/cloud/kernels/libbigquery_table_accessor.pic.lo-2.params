@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/kernels/libbigquery_table_accessor.pic.lo
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/kernels/_objs/bigquery_table_accessor/bigquery_table_accessor.pic.o

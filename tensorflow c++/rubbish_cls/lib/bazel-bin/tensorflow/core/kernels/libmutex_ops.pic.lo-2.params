@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmutex_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/mutex_ops/mutex_ops.pic.o

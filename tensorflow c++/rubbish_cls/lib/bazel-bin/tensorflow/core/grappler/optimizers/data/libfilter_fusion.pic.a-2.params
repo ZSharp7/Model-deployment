@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/libfilter_fusion.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/_objs/filter_fusion/filter_fusion.pic.o

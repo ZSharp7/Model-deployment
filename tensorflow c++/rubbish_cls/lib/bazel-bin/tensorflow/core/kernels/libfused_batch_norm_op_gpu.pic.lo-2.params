@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libfused_batch_norm_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/fused_batch_norm_op_gpu/fused_batch_norm_op.cu.pic.o

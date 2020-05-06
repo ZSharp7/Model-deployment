@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/c/libtf_status_helper.pic.a
+bazel-out/k8-opt/bin/tensorflow/c/_objs/tf_status_helper/tf_status_helper.pic.o

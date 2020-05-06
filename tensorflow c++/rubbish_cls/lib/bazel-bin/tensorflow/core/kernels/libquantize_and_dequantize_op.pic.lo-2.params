@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libquantize_and_dequantize_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/quantize_and_dequantize_op/quantize_and_dequantize_op.pic.o

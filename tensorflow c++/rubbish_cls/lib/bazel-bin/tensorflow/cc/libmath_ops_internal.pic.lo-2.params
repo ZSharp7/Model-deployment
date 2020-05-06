@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/libmath_ops_internal.pic.lo
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/math_ops_internal/math_ops_internal.pic.o

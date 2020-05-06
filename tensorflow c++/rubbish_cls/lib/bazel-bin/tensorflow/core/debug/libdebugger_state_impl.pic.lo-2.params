@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/debug/libdebugger_state_impl.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/debug/_objs/debugger_state_impl/debugger_state_impl.pic.o

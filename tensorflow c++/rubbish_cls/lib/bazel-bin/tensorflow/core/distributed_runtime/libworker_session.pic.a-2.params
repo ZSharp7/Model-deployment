@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libworker_session.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/worker_session/cluster_function_library_runtime.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/worker_session/worker_session.pic.o

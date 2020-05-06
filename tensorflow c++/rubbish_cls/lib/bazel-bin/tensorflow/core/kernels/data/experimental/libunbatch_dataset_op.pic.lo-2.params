@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/libunbatch_dataset_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/_objs/unbatch_dataset_op/unbatch_dataset_op.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libsession_mgr.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/session_mgr/session_mgr.pic.o

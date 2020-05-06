@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/libgcs_config_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/_objs/gcs_config_ops_op_lib/gcs_config_ops.pic.o

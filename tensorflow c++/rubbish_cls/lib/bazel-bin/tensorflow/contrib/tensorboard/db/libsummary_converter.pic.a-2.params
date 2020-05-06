@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/tensorboard/db/libsummary_converter.pic.a
+bazel-out/k8-opt/bin/tensorflow/contrib/tensorboard/db/_objs/summary_converter/summary_converter.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libsplit_lib.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/split_lib/split_lib_cpu.pic.o

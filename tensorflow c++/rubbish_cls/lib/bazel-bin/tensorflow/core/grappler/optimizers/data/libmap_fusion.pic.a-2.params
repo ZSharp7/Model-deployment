@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/libmap_fusion.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/_objs/map_fusion/map_fusion.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/tensor_forest/libprediction_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/tensor_forest/_objs/prediction_ops/prediction_ops.pic.o

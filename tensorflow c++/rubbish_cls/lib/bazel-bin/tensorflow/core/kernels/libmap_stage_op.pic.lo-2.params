@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmap_stage_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/map_stage_op/map_stage_op.pic.o

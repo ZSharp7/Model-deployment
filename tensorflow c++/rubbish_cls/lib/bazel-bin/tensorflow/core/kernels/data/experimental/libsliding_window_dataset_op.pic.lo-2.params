@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/libsliding_window_dataset_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/_objs/sliding_window_dataset_op/sliding_window_dataset_op.pic.o

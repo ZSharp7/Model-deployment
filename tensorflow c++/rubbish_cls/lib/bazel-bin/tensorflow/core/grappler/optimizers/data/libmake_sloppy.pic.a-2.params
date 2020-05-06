@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/libmake_sloppy.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/_objs/make_sloppy/make_sloppy.pic.o

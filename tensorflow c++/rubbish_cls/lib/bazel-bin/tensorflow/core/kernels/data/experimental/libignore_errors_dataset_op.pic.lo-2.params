@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/libignore_errors_dataset_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/_objs/ignore_errors_dataset_op/ignore_errors_dataset_op.pic.o

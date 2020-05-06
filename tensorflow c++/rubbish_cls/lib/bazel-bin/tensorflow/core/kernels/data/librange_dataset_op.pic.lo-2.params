@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/librange_dataset_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/_objs/range_dataset_op/range_dataset_op.pic.o

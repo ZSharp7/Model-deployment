@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libword2vec_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/word2vec_ops/word2vec_ops.pic.o

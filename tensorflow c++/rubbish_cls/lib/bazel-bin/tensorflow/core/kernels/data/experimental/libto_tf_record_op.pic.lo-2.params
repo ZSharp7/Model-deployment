@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/libto_tf_record_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/_objs/to_tf_record_op/to_tf_record_op.pic.o

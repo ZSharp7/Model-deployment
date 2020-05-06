@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/vectorization/libdecode_csv_vectorizer.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/vectorization/_objs/decode_csv_vectorizer/decode_csv_vectorizer.pic.o

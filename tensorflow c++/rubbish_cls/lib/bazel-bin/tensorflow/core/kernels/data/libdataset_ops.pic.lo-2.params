@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/libdataset_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/_objs/dataset_ops/dataset_ops.pic.o

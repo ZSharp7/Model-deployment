@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/tensorboard/db/libsummary_file_writer.pic.a
+bazel-out/k8-opt/bin/tensorflow/contrib/tensorboard/db/_objs/summary_file_writer/summary_file_writer.pic.o

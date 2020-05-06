@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libspectral_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/spectral_ops_op_lib/spectral_ops.pic.o

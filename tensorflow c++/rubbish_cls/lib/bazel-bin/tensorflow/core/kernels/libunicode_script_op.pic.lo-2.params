@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libunicode_script_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/unicode_script_op/unicode_script_op.pic.o

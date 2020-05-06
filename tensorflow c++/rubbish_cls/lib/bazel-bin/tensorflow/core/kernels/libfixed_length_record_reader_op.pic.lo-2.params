@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libfixed_length_record_reader_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/fixed_length_record_reader_op/fixed_length_record_reader_op.pic.o

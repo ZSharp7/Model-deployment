@@ -1,0 +1,10 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libreduction_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_all.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_any.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_common.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_max.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_mean.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_min.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_prod.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops/reduction_ops_sum.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libmessage_wrappers.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/message_wrappers/message_wrappers.pic.o

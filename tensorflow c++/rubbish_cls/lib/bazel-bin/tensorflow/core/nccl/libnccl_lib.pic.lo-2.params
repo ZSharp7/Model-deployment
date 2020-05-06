@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/nccl/libnccl_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/nccl/_objs/nccl_lib/nccl_manager.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/nccl/_objs/nccl_lib/nccl_rewrite.pic.o

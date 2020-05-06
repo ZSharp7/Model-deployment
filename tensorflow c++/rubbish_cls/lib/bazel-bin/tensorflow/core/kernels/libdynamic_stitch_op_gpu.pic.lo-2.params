@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdynamic_stitch_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/dynamic_stitch_op_gpu/dynamic_stitch_op_gpu.cu.pic.o

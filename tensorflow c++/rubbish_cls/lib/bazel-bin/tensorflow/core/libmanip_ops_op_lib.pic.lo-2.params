@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libmanip_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/manip_ops_op_lib/manip_ops.pic.o

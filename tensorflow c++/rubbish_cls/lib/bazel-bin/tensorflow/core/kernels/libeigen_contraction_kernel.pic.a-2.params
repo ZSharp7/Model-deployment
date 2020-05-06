@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libeigen_contraction_kernel.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/eigen_contraction_kernel/eigen_contraction_kernel.pic.o

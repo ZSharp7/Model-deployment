@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmfcc.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/mfcc/mfcc.pic.o

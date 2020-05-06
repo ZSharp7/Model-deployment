@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/profiler/internal/libtfprof_show_multi.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/profiler/internal/_objs/tfprof_show_multi/tfprof_show_multi.pic.o

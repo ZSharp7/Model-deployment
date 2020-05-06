@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/lib/db/libsqlite.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/lib/db/_objs/sqlite/sqlite.pic.o

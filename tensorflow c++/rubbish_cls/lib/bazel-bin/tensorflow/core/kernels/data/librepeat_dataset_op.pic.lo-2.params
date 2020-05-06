@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/librepeat_dataset_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/_objs/repeat_dataset_op/repeat_dataset_op.pic.o

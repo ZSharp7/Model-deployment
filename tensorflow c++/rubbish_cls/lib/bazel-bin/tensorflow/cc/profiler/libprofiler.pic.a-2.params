@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/profiler/libprofiler.pic.a
+bazel-out/k8-opt/bin/tensorflow/cc/profiler/_objs/profiler/profiler.pic.o

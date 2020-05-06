@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/debug/libdebug_service_proto_cc.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/debug/_objs/debug_service_proto_cc/debug_service.pb.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/debug/_objs/debug_service_proto_cc/debug_service.grpc.pb.pic.o

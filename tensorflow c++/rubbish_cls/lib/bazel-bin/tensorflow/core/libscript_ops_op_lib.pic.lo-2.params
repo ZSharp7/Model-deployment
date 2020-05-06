@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libscript_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/script_ops_op_lib/script_ops.pic.o

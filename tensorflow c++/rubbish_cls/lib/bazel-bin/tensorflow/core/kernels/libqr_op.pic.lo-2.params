@@ -1,0 +1,6 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libqr_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/qr_op/qr_op_complex128.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/qr_op/qr_op_complex64.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/qr_op/qr_op_double.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/qr_op/qr_op_float.pic.o

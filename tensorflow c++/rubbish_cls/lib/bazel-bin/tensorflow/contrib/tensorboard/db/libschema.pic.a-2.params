@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/tensorboard/db/libschema.pic.a
+bazel-out/k8-opt/bin/tensorflow/contrib/tensorboard/db/_objs/schema/schema.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmatrix_band_part_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/matrix_band_part_op/matrix_band_part_op.pic.o

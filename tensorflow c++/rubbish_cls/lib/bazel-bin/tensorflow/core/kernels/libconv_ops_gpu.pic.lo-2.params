@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libconv_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/conv_ops_gpu/conv_ops_gpu_2.cu.pic.o

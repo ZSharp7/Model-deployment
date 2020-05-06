@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libbarrier_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/barrier_ops/barrier_ops.pic.o

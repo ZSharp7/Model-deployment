@@ -1,0 +1,10 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libpooling_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/avgpooling_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/cudnn_pooling_gpu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/fractional_avg_pool_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/fractional_max_pool_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/fractional_pool_common.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/maxpooling_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/pooling_ops_3d.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops/pooling_ops_common.pic.o

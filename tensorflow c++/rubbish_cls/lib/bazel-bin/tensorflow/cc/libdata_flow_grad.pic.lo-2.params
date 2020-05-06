@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/libdata_flow_grad.pic.lo
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/data_flow_grad/data_flow_grad.pic.o

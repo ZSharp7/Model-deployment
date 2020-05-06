@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libconcat_lib.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/concat_lib/concat_lib_cpu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/concat_lib/concat_lib_gpu.pic.o

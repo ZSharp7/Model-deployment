@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libregex_replace_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/regex_replace_op/regex_replace_op.pic.o

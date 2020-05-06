@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/libexperimental_implementation_selector.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/_objs/experimental_implementation_selector/experimental_implementation_selector.pic.o

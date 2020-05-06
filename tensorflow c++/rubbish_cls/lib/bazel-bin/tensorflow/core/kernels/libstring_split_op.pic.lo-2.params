@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libstring_split_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/string_split_op/string_split_op.pic.o

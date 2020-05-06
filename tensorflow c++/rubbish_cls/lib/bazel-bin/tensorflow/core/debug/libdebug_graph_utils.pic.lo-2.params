@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/debug/libdebug_graph_utils.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/debug/_objs/debug_graph_utils/debug_graph_utils.pic.o

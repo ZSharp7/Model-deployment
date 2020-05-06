@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmatching_files_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/matching_files_op/matching_files_op.pic.o

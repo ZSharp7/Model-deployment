@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/profiler/internal/libtfprof_scope.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/profiler/internal/_objs/tfprof_scope/tfprof_scope.pic.o

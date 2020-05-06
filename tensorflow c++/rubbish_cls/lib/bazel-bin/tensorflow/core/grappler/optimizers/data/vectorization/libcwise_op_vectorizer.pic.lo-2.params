@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/vectorization/libcwise_op_vectorizer.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/data/vectorization/_objs/cwise_op_vectorizer/cwise_op_vectorizer.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libinplace_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/inplace_ops_gpu/inplace_ops_functor_gpu.cu.pic.o

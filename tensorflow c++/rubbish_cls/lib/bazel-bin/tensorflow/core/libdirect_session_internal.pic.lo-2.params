@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libdirect_session_internal.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/direct_session_internal/direct_session.pic.o

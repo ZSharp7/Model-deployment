@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/libremote_device.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/_objs/remote_device/remote_device.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/libiterator_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/_objs/iterator_ops/iterator_ops.pic.o

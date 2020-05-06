@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmatmul_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/matmul_op/matmul_op.pic.o

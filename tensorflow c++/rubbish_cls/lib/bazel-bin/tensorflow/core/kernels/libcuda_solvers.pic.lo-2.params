@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libcuda_solvers.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/cuda_solvers/cuda_solvers.pic.o

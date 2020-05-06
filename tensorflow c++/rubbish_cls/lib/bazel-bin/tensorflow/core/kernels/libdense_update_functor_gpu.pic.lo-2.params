@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdense_update_functor_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/dense_update_functor_gpu/dense_update_functor_gpu.cu.pic.o

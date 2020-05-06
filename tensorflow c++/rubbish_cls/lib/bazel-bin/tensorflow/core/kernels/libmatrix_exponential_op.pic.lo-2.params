@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmatrix_exponential_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/matrix_exponential_op/matrix_exponential_op.pic.o

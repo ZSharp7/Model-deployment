@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libsdca_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/sdca_ops_op_lib/sdca_ops.pic.o

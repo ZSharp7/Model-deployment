@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libsparse_cross_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/sparse_cross_op/sparse_cross_op.pic.o

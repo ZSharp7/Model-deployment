@@ -1,0 +1,5 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libpooling_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops_gpu/avgpooling_op_gpu.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops_gpu/maxpooling_op_gpu.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/pooling_ops_gpu/pooling_ops_3d_gpu.cu.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libnth_element_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/nth_element_op/nth_element_op.pic.o

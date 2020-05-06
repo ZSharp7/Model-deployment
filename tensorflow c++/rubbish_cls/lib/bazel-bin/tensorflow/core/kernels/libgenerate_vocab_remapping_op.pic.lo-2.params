@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libgenerate_vocab_remapping_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/generate_vocab_remapping_op/generate_vocab_remapping_op.pic.o

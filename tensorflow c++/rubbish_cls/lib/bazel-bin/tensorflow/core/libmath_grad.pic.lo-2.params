@@ -1,0 +1,5 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libmath_grad.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/math_grad/math_grad.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/_objs/math_grad/random_grad.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/_objs/math_grad/stateless_random_grad.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libbcast_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/bcast_ops/bcast_ops.pic.o

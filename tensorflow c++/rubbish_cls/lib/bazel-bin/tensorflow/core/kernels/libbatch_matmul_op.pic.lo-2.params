@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libbatch_matmul_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/batch_matmul_op/batch_matmul_op_complex.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/batch_matmul_op/batch_matmul_op_real.pic.o

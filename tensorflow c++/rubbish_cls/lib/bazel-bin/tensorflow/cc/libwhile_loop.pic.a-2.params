@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/libwhile_loop.pic.a
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/while_loop/while_loop.pic.o

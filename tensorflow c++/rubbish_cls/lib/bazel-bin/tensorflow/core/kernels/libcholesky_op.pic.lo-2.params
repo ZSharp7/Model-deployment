@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libcholesky_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/cholesky_op/cholesky_op.pic.o

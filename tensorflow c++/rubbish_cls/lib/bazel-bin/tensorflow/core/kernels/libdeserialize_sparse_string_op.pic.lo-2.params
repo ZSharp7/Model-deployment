@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libdeserialize_sparse_string_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/deserialize_sparse_string_op/deserialize_sparse_string_op.pic.o

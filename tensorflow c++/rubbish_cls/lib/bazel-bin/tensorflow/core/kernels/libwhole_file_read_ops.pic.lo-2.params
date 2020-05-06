@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libwhole_file_read_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/whole_file_read_ops/whole_file_read_ops.pic.o

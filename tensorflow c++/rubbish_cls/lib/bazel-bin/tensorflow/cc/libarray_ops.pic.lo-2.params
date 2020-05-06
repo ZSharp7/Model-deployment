@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/libarray_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/array_ops/array_ops.pic.o

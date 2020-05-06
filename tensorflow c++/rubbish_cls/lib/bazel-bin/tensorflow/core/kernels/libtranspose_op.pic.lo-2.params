@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libtranspose_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/transpose_op/transpose_op.pic.o

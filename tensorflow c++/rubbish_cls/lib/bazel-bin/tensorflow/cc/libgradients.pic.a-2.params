@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/cc/libgradients.pic.a
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/gradients/gradients.pic.o
+bazel-out/k8-opt/bin/tensorflow/cc/_objs/gradients/while_gradients.pic.o

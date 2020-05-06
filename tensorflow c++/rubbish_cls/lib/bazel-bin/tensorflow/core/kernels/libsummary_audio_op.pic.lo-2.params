@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libsummary_audio_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/summary_audio_op/summary_audio_op.pic.o

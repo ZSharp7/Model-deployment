@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libmfcc_mel_filterbank.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/mfcc_mel_filterbank/mfcc_mel_filterbank.pic.o

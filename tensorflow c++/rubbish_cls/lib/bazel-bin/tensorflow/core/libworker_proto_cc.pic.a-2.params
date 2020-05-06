@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libworker_proto_cc.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/_objs/worker_proto_cc/worker.pb.pic.o

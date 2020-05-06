@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/liblookup_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/lookup_ops_op_lib/lookup_ops.pic.o

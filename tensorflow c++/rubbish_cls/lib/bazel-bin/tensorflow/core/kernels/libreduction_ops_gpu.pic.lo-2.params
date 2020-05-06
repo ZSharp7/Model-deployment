@@ -1,0 +1,10 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libreduction_ops_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_gpu_bool.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_gpu_complex128.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_gpu_complex64.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_gpu_double.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_gpu_float.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_gpu_int.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_half_mean_sum.cu.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reduction_ops_gpu/reduction_ops_half_prod_max_min.cu.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libadjust_contrast_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/adjust_contrast_op/adjust_contrast_op.pic.o

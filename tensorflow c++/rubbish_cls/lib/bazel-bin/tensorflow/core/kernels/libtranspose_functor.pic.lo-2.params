@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libtranspose_functor.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/transpose_functor/transpose_functor_cpu.pic.o

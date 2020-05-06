@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/librecord_input_op.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/record_input_op/record_input_op.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/record_input_op/record_yielder.pic.o

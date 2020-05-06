@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/c/libc_api.pic.a
+bazel-out/k8-opt/bin/tensorflow/c/_objs/c_api/c_api.pic.o
+bazel-out/k8-opt/bin/tensorflow/c/_objs/c_api/c_api_function.pic.o

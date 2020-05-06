@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libboosted_trees_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/boosted_trees_ops_op_lib/boosted_trees_ops.pic.o

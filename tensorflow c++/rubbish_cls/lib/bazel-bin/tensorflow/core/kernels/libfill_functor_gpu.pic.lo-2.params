@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libfill_functor_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/fill_functor_gpu/fill_functor.cu.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libcudnn_rnn_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/_objs/cudnn_rnn_ops_op_lib/cudnn_rnn_ops.pic.o

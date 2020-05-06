@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libreshape_util.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/reshape_util/reshape_util.pic.o

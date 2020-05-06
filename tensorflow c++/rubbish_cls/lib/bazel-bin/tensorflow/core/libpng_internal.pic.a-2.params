@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/libpng_internal.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/_objs/png_internal/png_io.pic.o

@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/eager/libeager_service_impl.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/eager/_objs/eager_service_impl/eager_service_impl.pic.o

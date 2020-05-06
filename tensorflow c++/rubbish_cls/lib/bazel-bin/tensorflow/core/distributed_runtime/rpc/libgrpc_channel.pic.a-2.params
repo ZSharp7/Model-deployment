@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/rpc/libgrpc_channel.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/distributed_runtime/rpc/_objs/grpc_channel/grpc_channel.pic.o

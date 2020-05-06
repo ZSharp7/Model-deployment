@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/sql/libsql.pic.a
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/sql/_objs/sql/driver_manager.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/data/experimental/sql/_objs/sql/sqlite_query_connection.pic.o

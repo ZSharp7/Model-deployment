@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libresize_nearest_neighbor_op_gpu.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/resize_nearest_neighbor_op_gpu/resize_nearest_neighbor_op_gpu.cu.pic.o

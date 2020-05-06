@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libgather_functor.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/gather_functor/gather_functor.pic.o

@@ -1,0 +1,4 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/kernels/libctc_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/ctc_ops/ctc_decoder_ops.pic.o
+bazel-out/k8-opt/bin/tensorflow/core/kernels/_objs/ctc_ops/ctc_loss_op.pic.o

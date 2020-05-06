@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/libgpu_swapping_ops.pic.lo
+bazel-out/k8-opt/bin/tensorflow/core/grappler/optimizers/_objs/gpu_swapping_ops/gpu_swapping_ops.pic.o

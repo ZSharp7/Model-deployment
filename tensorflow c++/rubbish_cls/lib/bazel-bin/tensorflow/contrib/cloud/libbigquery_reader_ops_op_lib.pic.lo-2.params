@@ -1,0 +1,3 @@
+rcsD
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/libbigquery_reader_ops_op_lib.pic.lo
+bazel-out/k8-opt/bin/tensorflow/contrib/cloud/_objs/bigquery_reader_ops_op_lib/bigquery_reader_ops.pic.o
