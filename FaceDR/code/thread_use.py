@@ -2,7 +2,7 @@ from PyQt5.QtCore import QThread, pyqtSignal
 import cv2
 
 class CameraThread(QThread):
-    tarigger = pyqtSignal()
+    tarigger = pyqtSignal(str)
     def __init__(self):
         super(CameraThread,self).__init__()
         self.working = True
@@ -10,7 +10,6 @@ class CameraThread(QThread):
     def __del__(self):
         self.wait()
     def run(self):
-
-        self.tarigger.emit()
+        self.tarigger.emit('')
     def stop(self):
         self.working = False

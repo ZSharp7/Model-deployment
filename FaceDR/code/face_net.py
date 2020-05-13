@@ -6,7 +6,7 @@ import configparser
 class FaceNet:
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
         self.model_path = self.config.get('face_net','pb_model')
         self.graph = tf.Graph()
         self.sess = tf.Session(graph=self.graph)

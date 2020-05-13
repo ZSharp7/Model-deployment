@@ -1,5 +1,6 @@
 import os
 import configparser
+import win32api
 import time
 from PyQt5 import QtWidgets,QtGui,QtCore,Qt
 import sys
@@ -8,28 +9,44 @@ import cv2
 from PIL import Image
 import numpy as np
 import threading
-from compare_face import VisitMilvus
-from database import DB
-from save_face import Ui_Form
-from show_data import ShowData
-from image_tosave import FromImageSave
-from ui_design import Ui_MainWindow
-from thread_use import CameraThread
-from face_detect import FaceDR
-from face_net import  FaceNet
+from code.compare_face import VisitMilvus
+from code.database import DB
+from code.save_face import Ui_Form
+from code.show_data import ShowData
+from code.image_tosave import FromImageSave
+from code.ui_design import Ui_MainWindow
+from code.thread_use import CameraThread
+from code.face_detect import FaceDR
+from code.face_net import  FaceNet
+
+class window(QtWidgets.QMainWindow):
+    def __init__(self):
+        super(window,self).__init__()
+        self.thread_status = True
+    def closeEvent(self,event):
+        result = QtWidgets.QMessageBox.question(self,
+                                            "退出",
+                                            "是否退出?",
+                                            QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+        event.ignore()
+        if result == QtWidgets.QMessageBox.Yes:
+            self.thread_status = False
+            event.accept()
+
 
 class Event(Ui_MainWindow):
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
         self.save_path = self.config.get('ui_event', 'save_path')
-
+        self.camera_number = 0
         self.app = QtWidgets.QApplication(sys.argv)
-        self.MainWindow = QtWidgets.QMainWindow()
+        self.MainWindow = window()
         self.setupUi(self.MainWindow)
         self.MainWindow.setWindowIcon(QtGui.QIcon(self.config.get('ui_event', 'icon')))
         self.camera_btn.setEnabled(False)
         self.printf("界面构造成功。")
+        self.emb_flag = True
         # milvus
         self.milvus = VisitMilvus()
         if self.milvus.status == False:
@@ -38,7 +55,7 @@ class Event(Ui_MainWindow):
             self.printf("Milvus is connected.")
         self.tablename = 'facetable'
         # camera
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(self.camera_number + cv2.CAP_DSHOW)
         # model
         self.detect = FaceDR()
         self.detect_flag = False
@@ -47,12 +64,15 @@ class Event(Ui_MainWindow):
         self.face_flag = True
         # mysql
         self.db = DB()
-
+        self.emb_db = DB()
+        self.camera_lock = threading.Lock()
         # 相机拍照
-        self.camera_thread = CameraThread()
-        self.camera_thread.tarigger.connect(self._load_image)
-        self.camera_time = QTimer()
-        self.camera_time.timeout.connect(lambda : self.camera_thread.start())
+        self.camera_thread = threading.Thread(target=self._load_image)
+
+        # self.camera_thread.tarigger.connect(self._load_image)
+        # self.camera_time = QTimer()
+        # self.camera_time.timeout.connect(lambda : threading.Thread(target=self._load_image).start())
+
         # 模型初始化
         self.model_thread = threading.Thread(target=self._init_model)
         self.model_thread.start()
@@ -62,6 +82,8 @@ class Event(Ui_MainWindow):
         # 菜单栏栏信号槽
         self.show_m.triggered.connect(self.show_data)
         self.save_m.triggered.connect(self.save_from_image)
+        self.setting_m.triggered.connect(self.setting)
+        self.about_m.triggered.connect(self.about)
 
     def _init_model(self):
         '''
@@ -81,6 +103,22 @@ class Event(Ui_MainWindow):
         self.camera_btn.setEnabled(True)
         self.detect_flag = True
 
+    def about(self):
+        # self.camera_time.stop()
+        # self.camera_btn.setEnabled(True)
+        print('display_info ')
+        message_box = QtWidgets.QMessageBox
+        message_box.information(self.Form, "About", "毕设项目--人脸检测识别器(2020.5)", message_box.Yes)
+
+    def setting(self):
+        '''
+        菜单栏，设置命令，使用win记事本打开配置文件
+        :return:
+        '''
+        self.printf("打开配置文件.")
+        # self.camera_time.stop()
+        # self.camera_btn.setEnabled(True)
+        win32api.ShellExecute(0, 'open', 'notepad.exe', './config.ini', '', 1)
 
     def add_data(self):
 
@@ -89,27 +127,28 @@ class Event(Ui_MainWindow):
         :return:
         '''
         self.printf("增加数据。。")
-        self.camera_time.stop()
-        self.camera_btn.setEnabled(True)
+        # self.camera_time.stop()
+        # self.camera_btn.setEnabled(True)
         self.MainWindow2 = QtWidgets.QMainWindow()
-        id = self.milvus.table_len(self.tablename)
-        # print(self.save_path+str(id) + '.jpg')
+        # id = self.milvus.table_len(self.tablename)
+
         try:
-            # cv2.imwrite(os.path.join(self.save_path,str(id)+'.jpg'),self.face_img)
-            # print('文件写入成功。')
-            self.Ui_Form = Ui_Form(id,self.facenet,
-                                   self.db,
+            self.Ui_Form = Ui_Form(self.facenet,
                                    self.milvus,
                                    self.face_img,
-                                   os.path.join(self.save_path,str(id)+'.jpg'))
+                                   self.save_path)
             self.Ui_Form.setupUi(self.MainWindow2)
             self.MainWindow2.show()
         except:
             print(' is error')
 
     def save_from_image(self):
-        self.camera_time.stop()
-        self.camera_btn.setEnabled(True)
+        '''
+        菜单栏存储数据命令，从本地图片中导入数据至数据库中
+        :return:
+        '''
+        # self.camera_time.stop()
+        # self.camera_btn.setEnabled(True)
 
         self.MainWindow_fromImage = QtWidgets.QMainWindow()
         self.ui = FromImageSave(self.detect,self.facenet)
@@ -118,8 +157,12 @@ class Event(Ui_MainWindow):
 
 
     def show_data(self):
-        self.camera_time.stop()
-        self.camera_btn.setEnabled(True)
+        '''
+        菜单栏，显示数据命令，从mysql中读取数据并显示
+        :return:
+        '''
+        # self.camera_time.stop()
+        # self.camera_btn.setEnabled(True)
 
         self.MainWindow_show = QtWidgets.QMainWindow()
         self.ui = ShowData()
@@ -141,15 +184,23 @@ class Event(Ui_MainWindow):
         return np.array(new_image)
 
     def _start_camera(self):
+        '''
+        开始相机线程
+        :return:
+        '''
         self.db = DB()
         self.printf("Start Camera and Using model.")
-        self.cap = cv2.VideoCapture(0)
-        self.camera_time.start(100)
-        # self.facenet_time.start(2000)
+
+        self.camera_thread.start()
         self.printf("FaceNet 向量生成速度2s/次. ")
         self.camera_btn.setEnabled(False)
 
     def get_emb(self):
+        '''
+        生成人脸特征向量，并人脸检索和检索信息显示
+        :return:
+        '''
+
         image = self.face_img.copy()
         face_img = self._letterbox_image(image,(160, 160))
         face_img = face_img[np.newaxis,:]
@@ -162,42 +213,67 @@ class Event(Ui_MainWindow):
         else:
             self.disp_info(None)
 
+
     def disp_info(self,data):
+        '''
+        显示人脸检索到的信息
+        :param data:
+        :return:
+        '''
         if data == None:
             output = ''
             image = cv2.imread(self.config.get('ui_event','background_image'))
-            image = cv2.resize(image,(121,151))
+            image = cv2.resize(image,(130,130))
         else:
             output = "ID：%d\n姓名：%s\n性别：%s\n出生日期：%s\n手机号：%s\n地址：%s"%(
                 data['id'],data['name'],data['sex'],data['born'],data['phone'],data['adress'])
-            image = cv2.imread(data['image_path'])
 
-        self.info_text.setPlainText(output)  # 在指定的区域显示提示信息
+            image = cv2.imread(data['image_path'])
+        self.info_text.setText(output)  # 在指定的区域显示提示信息
         self.disp_label(self.face_lab,image)
 
     def _load_image(self):
-
-        self.face_times += 1
-        ret, frame = self.cap.read()
-        frame = cv2.flip(frame,1)
-        if self.detect_flag:
-            bboxes = self.detect.run(frame,False)
-            area = [(box[2]-box[0])*(box[3]-box[1])  for box in bboxes]
-            area.sort(reverse=True)
-            if len(bboxes) < 1:
-                self.disp_info(None)
-            for box in bboxes:
-                xmin,ymin,xmax,ymax = box
-                if (xmax-xmin)*(ymax-ymin) == area[0]:
-                    if self.face_times % 10 == 0:
-                        self.face_img = frame[ymin+3:ymax-3, xmin+3:xmax-3]
-                        self.get_emb()
-                    cv2.rectangle(frame,(xmin,ymin),(xmax,ymax),(0,255,0),1)
-            if len(bboxes) <= 0:
-                self.face_img = None
-        self.disp_label(self.camera_lab,frame)
-
+        '''
+        相机线程
+        :return:
+        '''
+        while True:
+            if self.Form.thread_status == False:
+                break
+            self.face_times += 1
+            ret, frame = self.cap.read()
+            if ret == False:
+                for i in range(3):
+                    self.printf('第%d次，相机重连。。'%i)
+                    self.cap = cv2.VideoCapture(0)
+                    ret,frame = self.cap.read()
+                    if ret:
+                        break
+            frame = cv2.flip(frame,1)
+            if self.detect_flag:
+                bboxes = self.detect.run(frame,False)
+                area = [(box[2]-box[0])*(box[3]-box[1])  for box in bboxes]
+                area.sort(reverse=True)
+                if len(bboxes) < 1:
+                    self.disp_info(None)
+                for box in bboxes:
+                    xmin,ymin,xmax,ymax = box
+                    if (xmax-xmin)*(ymax-ymin) == area[0]:
+                        if self.face_times % 10 == 0:
+                            self.face_img = frame[ymin+3:ymax-3, xmin+3:xmax-3]
+                            try:
+                                threading.Thread(target=self.get_emb).start()
+                            except:
+                                print('识别异常。')
+                        cv2.rectangle(frame,(xmin,ymin),(xmax,ymax),(0,255,0),1)
+                if len(bboxes) <= 0:
+                    self.face_img = None
+            self.disp_label(self.camera_lab,frame)
     def run(self):
+        '''
+        开始运行
+        :return:
+        '''
         self.MainWindow.show()
         sys.exit(self.app.exec_())
 

@@ -4,20 +4,17 @@ import pymysql
 class DB:
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
         # 打开数据库连接
         self.db = pymysql.connect(host=self.config.get('database','host'),
                              user=self.config.get('database','user'),
                              password=self.config.get('database','password'),
                              db=self.config.get('database','db'))
+        self.cursor = self.db.cursor()
     def create_table(self):
-        # # 使用 cursor() 方法创建一个游标对象 cursor
+        # 使用 cursor() 方法创建一个游标对象 cursor
         cursor = self.db.cursor()
-        #
-        # # 使用 execute() 方法执行 SQL，如果表存在则删除
-        # cursor.execute("DROP TABLE IF EXISTS EMPLOYEE")
-        #
-        # # 使用预处理语句创建表
+        # 使用预处理语句创建表
         sql = """CREATE TABLE person_data (
                  id  INT NOT NULL PRIMARY KEY,
                  name  varchar(3) NOT NULL,
@@ -75,16 +72,32 @@ class DB:
 
         return result
 
+    def select_id(self,id):
+        cursor = self.db.cursor()
+        sql = """
+        select id from person_data where id=%s;"""%id
+        try:
+            cursor.execute(sql)
+            self.db.commit()
+            result = cursor.fetchall()
+        except:
+            self.db.rollback()
+            print('命令执行错误')
+            return False
+        if result==():
+            return False
+        else:
+            return True
 
     def select(self,id):
-        cursor = self.db.cursor()
+        # cursor = self.db.cursor()
         sql = """
         select * from person_data where id=%s;
         """%id
         try:
-            cursor.execute(sql)
+            self.cursor.execute(sql)
             self.db.commit()
-            result = cursor.fetchone()
+            result = self.cursor.fetchone()
         except:
             self.db.rollback()
             return False
@@ -124,5 +137,5 @@ if __name__ == '__main__':
     #     path = "../data/db/images"
     # )
     result = DB()
-    print(result.select('0'))
+    print(result.select_id('0'))
     # print(result)

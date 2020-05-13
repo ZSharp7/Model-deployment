@@ -7,8 +7,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets, Qt
-from database import DB
-from compare_face import VisitMilvus
+from code.database import DB
+from code.compare_face import VisitMilvus
 import configparser
 import os
 
@@ -21,12 +21,11 @@ class ShowData(object):
         self.db = DB()
         self.milvus = VisitMilvus()
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
 
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(750, 231)
-
         self.tableWidget = QtWidgets.QTableWidget(Form)
         self.tableWidget.setGeometry(QtCore.QRect(0, 0, 750, 231))
         self.tableWidget.setObjectName("tableWidget")
@@ -59,7 +58,7 @@ class ShowData(object):
 
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "数据显示"))
-        Form.setWindowIcon(QtGui.QIcon("./data/images/icon.ico"))
+        Form.setWindowIcon(QtGui.QIcon(self.config.get('show_data', 'icon')))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("Form", "选择"))
         item = self.tableWidget.horizontalHeaderItem(1)
@@ -87,10 +86,6 @@ class ShowData(object):
         self.tableWidget.setRowCount(self.length)
         _translate = QtCore.QCoreApplication.translate
         for col in range(self.length):
-            # item = QtWidgets.QTableWidgetItem()
-            # self.tableWidget.setVerticalHeaderItem(col, item)
-            # item = self.tableWidget.verticalHeaderItem(col)
-            # item.setText(_translate("Form", str(col)))
             data = datas[col]
             for row in range(7):
                 if row == 0:
@@ -104,8 +99,6 @@ class ShowData(object):
                     item.setTextAlignment(4)
                     self.tableWidget.setItem(col, row, item)
 
-                    # item = self.tableWidget.item(col, row)
-                    # item.setText(_translate("Form", str(data[row])))
 
     def output(self):
         for i in range(self.length):

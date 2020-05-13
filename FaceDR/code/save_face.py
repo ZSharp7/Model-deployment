@@ -12,19 +12,20 @@ import cv2
 import configparser
 from PIL import Image
 import numpy as np
-
+from code.database import DB
 
 class Ui_Form(QtWidgets.QWidget):
-    def __init__(self, id,facenet,db,milvus,image,save_path):
+    def __init__(self,facenet,milvus,image,save_path):
         super(Ui_Form,self).__init__()
-        self.db = db
-        self.save_path = "../data/db/img/"
+        self.db = DB()
+        self.config = configparser.ConfigParser()
+        self.config.read('./config.ini')
+        self.save_path = self.config.get('ui_event', 'save_path')
         self.path = save_path
         self.image = image
         self.facenet = facenet
         self.milvus = milvus
-        self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+
 
     def setupUi(self, Form):
 
@@ -60,7 +61,6 @@ class Ui_Form(QtWidgets.QWidget):
         self.id_lab.setGeometry(QtCore.QRect(180, 22, 31, 21))
         self.id_lab.setObjectName("id_lab")
         self.id_text = QtWidgets.QLineEdit(Form)
-        self.id_text.setEnabled(False)
         self.id_text.setGeometry(QtCore.QRect(250, 22, 81, 21))
         self.id_text.setObjectName("id_text")
         self.name_text = QtWidgets.QLineEdit(Form)
@@ -113,6 +113,7 @@ class Ui_Form(QtWidgets.QWidget):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "数据录入"))
+        Form.setWindowIcon(QtGui.QIcon(self.config.get('show_data', 'icon')))
         self.name_lab.setText(_translate("Form", "姓名："))
         self.sex_lab.setText(_translate("Form", "性别："))
         self.born_lab.setText(_translate("Form", "出生日期："))
@@ -125,6 +126,7 @@ class Ui_Form(QtWidgets.QWidget):
         self.cancel_btn.setText(_translate("Form", "取消"))
 
     def send(self):
+        id = self.id_text.text()
         name = self.name_text.text()
         sex_1 = self.man_radio.isChecked()
         sex_2 = self.women_radio.isChecked()
@@ -133,7 +135,11 @@ class Ui_Form(QtWidgets.QWidget):
         new_born = QtCore.QDate(QtCore.QDate.currentDate()).toPyDate()
         phone = self.phone_text.text()
         adress = self.adress_text.toPlainText()
-        if name=="":
+        if self.db.select_id(id):
+            self.disp_error("ID不能重复！")
+        elif id == "":
+            self.disp_error("ID不能为空！")
+        elif name=="":
             self.disp_error("姓名不能为空！")
         elif phone == "":
             self.disp_error("手机号码不能为空！")
@@ -151,15 +157,15 @@ class Ui_Form(QtWidgets.QWidget):
             if result != -1:
                 self.disp_error("不可重复存储。")
             else:
-                id = self.milvus.insert_data(vectors.tolist(),"facetable")
+                self.milvus.insert_data(vectors.tolist(),"facetable",id=int(id))
                 status = self.db.insert_data(id=str(id),
                                     name=name,
                                     sex=sex,
                                     born=str(born),
                                     phone=phone,
                                     adress=adress,
-                                    path = self.path)
-                cv2.imwrite(self.path, image)
+                                    path = self.path+id+'.jpg')
+                cv2.imwrite(self.path+id+'.jpg', image)
                 if status:
                     message_box = QtWidgets.QMessageBox
                     message_box.information(self,"OK","数据存储成功！",message_box.Yes)

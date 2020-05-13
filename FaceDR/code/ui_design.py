@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(550, 465)
         # 禁止拉伸窗口大小
         MainWindow.setFixedSize(MainWindow.width(), MainWindow.height())
-        MainWindow.setStyleSheet("#MainWindow{border-image:url(../data/images/desktop_bkg.jpg);}")
+        MainWindow.setStyleSheet("#MainWindow{border-image:url(./data/images/desktop_bkg.jpg);}")
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -44,14 +44,16 @@ class Ui_MainWindow(object):
         self.log_text = QtWidgets.QTextBrowser(self.centralwidget)
         self.log_text.setGeometry(QtCore.QRect(190, 280, 350, 161))
         self.log_text.setObjectName("log_text")
+        self.log_text.setReadOnly(True)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 651, 23))
         self.menubar.setObjectName("menubar")
         self.file_m = QtWidgets.QMenu(self.menubar)
         self.file_m.setObjectName("menu")
-        self.about_m = QtWidgets.QMenu(self.menubar)
-        self.about_m.setObjectName("menu_2")
+        self.other_m = QtWidgets.QMenu(self.menubar)
+        self.other_m.setObjectName("menu_2")
         MainWindow.setMenuBar(self.menubar)
         self.save_m = QtWidgets.QAction(MainWindow)
         self.save_m.setObjectName("action_2")
@@ -59,22 +61,26 @@ class Ui_MainWindow(object):
         self.show_m.setObjectName("action_3")
         self.setting_m = QtWidgets.QAction(MainWindow)
         self.setting_m.setObjectName("action_4")
+        self.about_m = QtWidgets.QAction(MainWindow)
+        self.about_m.setObjectName("action_5")
         self.file_m.addAction(self.save_m)
         self.file_m.addAction(self.show_m)
         self.file_m.addAction(self.setting_m)
+        self.other_m.addAction(self.about_m)
         self.menubar.addAction(self.file_m.menuAction())
-        self.menubar.addAction(self.about_m.menuAction())
+        self.menubar.addAction(self.other_m.menuAction())
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
-        self.info_text = QtWidgets.QPlainTextEdit(MainWindow)
+        self.info_text = QtWidgets.QLabel(MainWindow)
         self.info_text.setGeometry(QtCore.QRect(360, 175, 161, 100))
         self.info_text.setObjectName("adress_text")
-
+        self.info_text.setStyleSheet('background-color:rgb(255,255,255)')
+        # self.info_text.setReadOnly(True)
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-
+        self.Form = MainWindow
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -82,7 +88,8 @@ class Ui_MainWindow(object):
         self.camera_btn.setText(_translate("MainWindow", "Start"))
         self.add_data_btn.setText(_translate("MainWindow", "Add"))
         self.file_m.setTitle(_translate("MainWindow", "文件"))
-        self.about_m.setTitle(_translate("MainWindow", "关于"))
+        self.other_m.setTitle(_translate("MainWindow", "其它"))
+        self.about_m.setText(_translate("MainWindow", "关于"))
         self.save_m.setText(_translate("MainWindow", "存储图片"))
         self.show_m.setText(_translate("MainWindow", "查看数据"))
         self.setting_m.setText(_translate("MainWindow", "设置"))

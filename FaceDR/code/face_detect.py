@@ -39,7 +39,7 @@ COLOUR_CORRECT_BLUR_FRAC = 0.8
 class FaceDR:
     def __init__(self):
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
         self.pb_model = self.config.get('face_detect','pb_model')
         # self.detector = dlib.get_frontal_face_detector()
         # self.predictor = dlib.shape_predictor('../data/model/shape_predictor_68_face_landmarks.dat')

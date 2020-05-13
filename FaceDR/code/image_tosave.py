@@ -11,8 +11,8 @@ import os
 import cv2
 import numpy as np
 from PIL import Image
-from compare_face import VisitMilvus
-from database import DB
+from code.compare_face import VisitMilvus
+from code.database import DB
 import threading
 import configparser
 
@@ -24,7 +24,7 @@ class FromImageSave(object):
         self.milvus = VisitMilvus()
         self.db = DB()
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
 
     def setupUi(self, Form):
         Form.setObjectName("Form")
@@ -77,7 +77,6 @@ class FromImageSave(object):
 
 
         self.id_text = QtWidgets.QLineEdit(Form)
-        self.id_text.setEnabled(False)
         self.id_text.setGeometry(QtCore.QRect(170, 145, 81, 21))
         self.id_text.setObjectName("id_text")
 
@@ -115,7 +114,8 @@ class FromImageSave(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "数据录入"))
+        Form.setWindowIcon(QtGui.QIcon(self.config.get('show_data', 'icon')))
         self.open_btn.setText(_translate("Form", "打开图片"))
         self.save_btn.setText(_translate("Form", "保存"))
         self.label.setText(_translate("Form", "检测到脸部 =》"))
@@ -151,6 +151,7 @@ class FromImageSave(object):
                 self.face_flag = True
 
     def save(self):
+        id = self.id_text.text()
         name = self.name_text.text()
         sex_1 = self.man_radio.isChecked()
         sex_2 = self.women_radio.isChecked()
@@ -159,7 +160,11 @@ class FromImageSave(object):
         new_born = QtCore.QDate(QtCore.QDate.currentDate()).toPyDate()
         phone = self.phone_text.text()
         adress = self.adress_text.toPlainText()
-        if name == "":
+        if self.db.select_id(id):
+            self.disp_error("ID不能重复！")
+        elif id == "":
+            self.disp_error("ID不能为空！")
+        elif name == "":
             self.disp_error("姓名不能为空！")
         elif phone == "":
             self.disp_error("手机号码不能为空！")
@@ -178,7 +183,7 @@ class FromImageSave(object):
             if result != -1:
                 self.disp_error("错误！不能重复存储。")
             else:
-                id = self.milvus.insert_data(vectors.tolist(), "facetable")
+                self.milvus.insert_data(vectors.tolist(), "facetable", id =int(id))
                 status = self.db.insert_data(id=str(id),
                                              name=name,
                                              sex=sex,

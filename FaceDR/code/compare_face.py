@@ -5,7 +5,7 @@ class VisitMilvus:
     def __init__(self):
         self.milvus = Milvus()
         self.config = configparser.ConfigParser()
-        self.config.read('../config.ini')
+        self.config.read('./config.ini')
         try:
             self.milvus.connect(host=self.config.get('compare_face','host'), port=self.config.get('compare_face','port'))
             self.status = True
@@ -75,13 +75,15 @@ if __name__ == '__main__':
 
     db = VisitMilvus()
     table_name = "facetable"
-    # db.create(table_name)
+    #
     # db.disp_table_info("facetable")
     # print(db.insert_data(vectors.tolist(),'facetable'))
     # db.show_table("facetable")
     # length = db.table_len(table_name)
-    # db.delete_table(table_name)
-
+    db.delete_table(table_name)
+    import time
+    time.sleep(3)
+    db.create(table_name)
     # result = db.select_info(table_name,vectors.tolist())
 
     print(db.table_len(table_name))
