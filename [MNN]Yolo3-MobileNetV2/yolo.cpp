@@ -5,7 +5,7 @@
 //  Created by MNN on 2018/05/14.
 //  Copyright © 2018, Alibaba Group Holding Limited
 //
-
+  
 #include <stdio.h>
 #include "MNN/ImageProcess.hpp"
 #include "MNN/Interpreter.hpp"
